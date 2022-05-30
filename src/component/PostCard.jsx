@@ -8,8 +8,8 @@ export default function PostCard({ post, onDeleteClick }) {
     if (!post) return null
     const  { title, thumbnail, tags, meta, createdAt, slug } = post
   return (
-    <div className="bg-white shadow-sm rounded flex flex-col">
-        <img className="aspect-video" src={thumbnail || './blank.jpg'} alt={title} />
+    <div className="border rounded-lg group bg-white shadow-sm overflow-hidden flex flex-col">
+        <img className=" h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out " src={thumbnail || './blank.jpg'} alt={title} />
         <div className="p-2 flex-1 flex-col justify-between">
         <h1 className="text-lg font-semibold text-gray-700">{title}</h1>
         <p className="text-gray-500">{meta.substring(0, 80) + "..."}</p>

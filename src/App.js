@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import {AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai';
-import { Route, Routes } from 'react-router-dom';
-import CreatePost from './component/CreatePost';
-import Home from './component/Home';
-import Navbar from './component/Navbar';
-import NotFound from './component/NotFound';
-import SearchForm from './component/SearchForm';
-import UpdatePost from './component/UpdatePost';
+import React, { useState } from "react"
+import {AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
+import { Route, Routes } from "react-router-dom";
+import CreatePost from "./component/CreatePost";
+import Home from "./component/Home";
+import Navbar from "./component/Navbar";
+import NotFound from "./component/NotFound";
+import SearchForm from "./component/SearchForm";
+import UpdatePost from "./component/UpdatePost";
 
 export default function App() {
   const  [closedNav, setClosedNav] = useState(false)
@@ -15,9 +15,9 @@ export default function App() {
     setClosedNav(!closedNav)
   }
 
-  const  getNavWidth = () => (closedNav ? "w-16" : "w-56");
+  const  getNavWidth = () => (closedNav ? "w-16" : "sm:w-46 lg:w-56");
   return (
-    <div className='flex'>
+    <div className="flex max-w-7xl mx-auto">
       {/* nav section */}
       <div 
       className={getNavWidth() + " min-h-screen transition-width border border-r"}

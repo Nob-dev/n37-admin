@@ -56,8 +56,8 @@ const  paginationArr = new Array(paginationCount).fill(' ');
   };
 
   return ( 
-   <div className="bg-gray-200">
-  <div className="bg-gray-200 grid grid-cols-3 gap-3 pb-5">
+   <div className="flex-col md:inline-flex h-32 lg:h-full bg-gray-200">
+  <div className="bg-gray-200 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-6 pb-2 md:p-6">
     {searchResult.length ? searchResult.map(post => {
        return (
         <PostCard 

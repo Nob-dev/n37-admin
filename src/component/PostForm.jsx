@@ -155,7 +155,7 @@ const resetForm = () => {
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-semibold text-gray-700">Create New Post</h1>
         
-        <div className="flex items-center space-x-5">
+        <div className="flex items-center lg:space-x-5 sm:space-x-4">
           <button onClick={resetForm} type="button" className="flex items-center space-x-2 px-3 ring-1 ring-blue-500 rounded h-10 text-blue-500 hover:text-white hover:bg-blue-500 transition">
             <ImSpinner11 />
             <span>Reset</span> 
@@ -167,7 +167,7 @@ const resetForm = () => {
             <ImEye />
             <span>View</span> 
             </button>
-          <button className="w-36 h-10 hover:ring-1 bg-blue-500 rounded text-white hover:text-blue-500 hover:bg-transparent ring-blue-500 transition"> 
+          <button className="lg:w-36 md:w-30 sm:w-24 h-10 hover:ring-1 bg-blue-500 rounded text-white hover:text-blue-500 hover:bg-transparent ring-blue-500 transition"> 
         {busy ? <ImSpinner3  className="animate-spin mx-auto text-xl" /> 
         : postBtnTitle}
             </button>
