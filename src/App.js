@@ -43,7 +43,6 @@ export default function App() {
         </div>
 
         </div>
-
       <div className="max-w-screen-lg mx-auto">
        <Routes>
          <Route path="/" element={<Home />} />
