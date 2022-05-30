@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from "react";
 
 const mdRules = [
     { title: "From h1 to h6", rule: "# Heading -> ###### Heading "},
